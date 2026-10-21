@@ -8,16 +8,21 @@ echo "============================="
 echo ""
 echo ""
 
+# dataset_params=(
+#     "GIST1M 32 500 1000"
+#     "GLOVE100 16 500 500"
+#     "SIFT100M 32 500 500"
+#     "DEEP100M 32 500 750"
+#     "T2I100M 80 1000 2500"
+# )
+# we want just to check if things are working for now
 dataset_params=(
     "GIST1M 32 500 1000"
-    "GLOVE100 16 500 500"
-    "SIFT100M 32 500 500"
-    "DEEP100M 32 500 750"
-    "T2I100M 80 1000 2500"
 )
 
-INDEX_DIRECTORY=/home/mchatzakis/hnsw-index
-DATASET_DIRECTORY=/data/mchatzakis/datasets/processed/
+
+INDEX_DIRECTORY=/proj/batchvectordb-PG0/DARTH/DARTH_testing/hnsw-index
+DATASET_DIRECTORY=/proj/batchvectordb-PG0/DARTH/DARTH_testing/datasets/processed/
 
 mode=no-early-stop
 for dataset_param in "${dataset_params[@]}"

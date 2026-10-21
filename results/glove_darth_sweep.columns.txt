@@ -1,0 +1,28 @@
+run                      source filename
+queryset                 which query file this run used
+nlist                    
+nprobe                   IVF lists probed
+k                        neighbours requested
+qid                      query index, 0-based, indexes into the query set
+word                     the GloVe token this query vector represents
+freqrank                 line number in the frequency-sorted GloVe file; 0 = most common
+r                        RECALL for this query -- the dependent variable
+step                     search step at which this row was logged
+dists                    distance computations performed
+elaps_ms                 elapsed search time, milliseconds
+inserts                  insertions into the result heap
+first_nn_dist            distance to the true nearest neighbour (from groundtruth)
+nn_dist                  distance to the nearest neighbour found so far
+avg_dist                 mean distance across the current candidate set
+furthest_dist            largest distance in the current candidate set
+variance                 variance of candidate distances
+median                   
+percentile_25            
+percentile_75            
+r_current_interval       
+r_predictor_calls        
+r_predictor_time_ms      
+RDE                      DARTH recall distance estimate
+TDR                      DARTH target distance ratio
+NRS                      DARTH normalised rank sum
+r_predicted              

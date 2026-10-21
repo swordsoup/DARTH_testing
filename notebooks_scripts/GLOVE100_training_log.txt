@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/proj/batchvectordb-PG0/DARTH/DARTH_testing/notebooks_scripts/ivf_predictor_training.py", line 183, in <module>
+    main()
+  File "/proj/batchvectordb-PG0/DARTH/DARTH_testing/notebooks_scripts/ivf_predictor_training.py", line 66, in main
+    results = train_predictors(
+  File "/proj/batchvectordb-PG0/DARTH/DARTH_testing/notebooks_scripts/ivf_predictor_training.py", line 165, in train_predictors
+    model.booster_.save_model(model_file)
+  File "/users/mjiang2/.local/lib/python3.10/site-packages/lightgbm/basic.py", line 4461, in save_model
+    _safe_call(
+  File "/users/mjiang2/.local/lib/python3.10/site-packages/lightgbm/basic.py", line 296, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Model file ../predictor_models/ivf/darth/GLOVE100_nlist1000_nprobe100_s10000_k50_nestim100_lr0.1_li20_rl0_all_feats.txt is not available for writes
+Command exited with non-zero status 1
+        Command being timed: "python3 notebooks_scripts/ivf_predictor_training.py"
+        User time (seconds): 4024.14
+        System time (seconds): 272.19
+        Percent of CPU this job got: 1006%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 7:07.00
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 71044496
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 96
+        Minor (reclaiming a frame) page faults: 34653396
+        Voluntary context switches: 1647709
+        Involuntary context switches: 10335
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 1

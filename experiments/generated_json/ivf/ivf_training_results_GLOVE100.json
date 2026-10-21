@@ -1,0 +1,64 @@
+{
+    "50": {
+        "10000": {
+            "20": {
+                "all_feats": {
+                    "100": {
+                        "0.1": {
+                            "0": {
+                                "training_time": 158.8237373828888,
+                                "training_data_size": 92801320,
+                                "feature_importances": [
+                                    {
+                                        "Feature": "inserts",
+                                        "Importance": 565
+                                    },
+                                    {
+                                        "Feature": "first_nn_dist",
+                                        "Importance": 532
+                                    },
+                                    {
+                                        "Feature": "nn_dist",
+                                        "Importance": 498
+                                    },
+                                    {
+                                        "Feature": "dists",
+                                        "Importance": 359
+                                    },
+                                    {
+                                        "Feature": "percentile_25",
+                                        "Importance": 312
+                                    },
+                                    {
+                                        "Feature": "variance",
+                                        "Importance": 304
+                                    },
+                                    {
+                                        "Feature": "step",
+                                        "Importance": 134
+                                    },
+                                    {
+                                        "Feature": "percentile_50",
+                                        "Importance": 100
+                                    },
+                                    {
+                                        "Feature": "furthest_dist",
+                                        "Importance": 84
+                                    },
+                                    {
+                                        "Feature": "percentile_75",
+                                        "Importance": 58
+                                    },
+                                    {
+                                        "Feature": "avg_dist",
+                                        "Importance": 54
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

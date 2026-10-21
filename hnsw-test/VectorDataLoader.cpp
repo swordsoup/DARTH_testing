@@ -178,7 +178,7 @@ void VectorDataLoader::initializeDataMaps(){
     queryTypeToGroundtruthDistancesMap[NOISY_TESTING]["DEEP100M"] = directory_path + "DEEP100M/gauss_noisy_queries/query.10K.groundtruth.noise" + noise_perc + ".fvecs";
 
     // GLOVE100
-    baseVectorsMap["GLOVE100"] = directory_path + "GLOVE100/base.1183514.fvecs";
+    baseVectorsMap["GLOVE100"] = directory_path + "GLOVE100/base.1072514.fvecs";
 
     queryTypeToVectorsMap[TRAINING]["GLOVE100"] = directory_path + "GLOVE100/learn.100K.fvecs";
     queryTypeToVectorsMap[VALIDATION]["GLOVE100"] = directory_path + "GLOVE100/validation.10K.fvecs";

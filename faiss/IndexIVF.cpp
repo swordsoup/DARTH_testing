@@ -2090,6 +2090,7 @@ void IndexIVF::search_preassigned_DARTH(
               codes += code_size;
 
               if ((*q_ndis_interval) % *prediction_interval == 0) {
+                (*query_predictor_calls)++;
                 double q_elapsed_time = darthPredictor.dataManager.elapsed_secs() - q_search_start_time;
                 *predicted_recall_out = darthPredictor.predictRecall(
                     qid,
@@ -2191,7 +2192,7 @@ void IndexIVF::search_preassigned_DARTH(
 
         double q_search_start_time = darth_predictor.dataManager.elapsed_secs();
         float first_centroid_dist = 0.0;
-        int prediction_interval = 0;
+        int prediction_interval = darth_predictor.initial_prediction_interval;
         int query_predictor_calls = 0;
         double predictor_time = 0.0;
 

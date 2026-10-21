@@ -307,7 +307,7 @@ int main(int argc, char** argv) {
 
     // todo: implement some batching to monitor the progress.
     size_t batch_size = 10000000;
-    size_t num_batches = n / batch_size;
+    size_t num_batches = (n + batch_size - 1) / batch_size; //modified from author
     for (size_t i = 0; i < num_batches; i++) {
       size_t start = i * batch_size;
       size_t end = (i + 1) * batch_size;
